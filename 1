@@ -1,8 +1,8 @@
 #задача1
 def get_digit_sum(n):
+    a=str(abs(n))
     A=0
-    n = input()
-    for i in range(len(n)):
-        A=A+int(n[i])
-    print(A)
-get_digit_sum(n)
+    for i in range(len(a)):
+        A=A+int(a[i])
+    return(A) #или здесь print(a)???
+get_digit_sum(-567)
