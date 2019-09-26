@@ -1,11 +1,11 @@
 #задача2
 def is_beauty(n):
+    a=str(abs(n))
     A=0
-    n = input()
-    for i in range(len(n)):
-        A=A+int(n[i])
-    if int(n)%A==0:
-        print('True')
+    for i in range(len(a)):
+        A=A+int(a[i])
+    if n%A==0:
+        return True
     else:
-        print('False')
-is_beauty(n)
+        return False
+is_beauty(145)
