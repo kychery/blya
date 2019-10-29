@@ -6,5 +6,5 @@ def is_prime(n):
             d += 1
         return d == n
     else:
-        print('incorrect')
+        return False
 is_prime(24)
