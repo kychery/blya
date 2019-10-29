@@ -6,4 +6,6 @@ def number_of_matches(J, S):
                 n += 1
     return n
 
+J = str(input('J:'))
+s = str(input('S:'))
 number_of_matches(J, S)
