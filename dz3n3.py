@@ -1,5 +1,5 @@
 def text_generator(filename):
-    wile True:
+    while True:
         with open(filename, "r") as f:
             for line in f:
                 yield line.replace("\n", "")
