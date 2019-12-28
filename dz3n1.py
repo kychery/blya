@@ -1,11 +1,16 @@
-def number_of_matches(J, S):
-    count = 0
-    for i in range(len(J)):
-        for j in range(len(S)):
-            if J[i] == S[j]:
-                count += 1
-    return count
+def lru_cache(function):
+    cache = {}
 
-J = input("J =")
-S = input("S =")
-print(number_of_matches(J, S))
+    def wrapper(*args, **kwargs):
+        args_key = args
+        kwargs_key = ('kwargs',)
+        kwargs_key = kwargs_key + tuple(kwargs.items())
+        key = args_key + kwargs_key
+        if key in cache:
+            return cache.get(args_key)
+
+        value = function(*args, **kwargs)
+        cache[args_key] = value
+        return value
+
+    return wrapper
