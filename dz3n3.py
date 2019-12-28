@@ -2,7 +2,7 @@ def text_generator(filename):
     wile True:
         with open(filename, "r") as f:
             for line in f:
-                yield line/replace("\n", "")
+                yield line.replace("\n", "")
 
 
 gen = text_generator("somefile.txt")
