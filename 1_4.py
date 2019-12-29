@@ -1,9 +1,8 @@
-def is_prime(n):
+def is_prime(n, d=2):
     if n > 1:
-        d = 2
         while n % d != 0:
             d += 1
-        return d == n
+        return True
     else:
         return False
     
