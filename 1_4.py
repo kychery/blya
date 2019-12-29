@@ -1,5 +1,5 @@
 def is_prime(n):
-    if n > 0:
+    if n > 1:
         d = 2
         while n % d != 0:
             d += 1
@@ -8,4 +8,5 @@ def is_prime(n):
         return False
     
 
-is_prime(24)
+num = int(input())
+is_prime(num)
