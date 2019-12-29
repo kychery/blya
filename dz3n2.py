@@ -1,8 +1,11 @@
-def get_sorted_squares(nums):
-    nums = list(map(int, nums))
-    squares = [num*num for num in nums]
-    return sorted(squares)
-    
-A = list(input("A = ").split(', '))
-get_sorted_squares(A)
-          
+def devider_generator(number, x=1):
+    while True:
+        if number % x == 0:
+            yield x
+        x += 1
+        if x > number:
+            break
+
+deviders = devider_generator(1024)
+for i in deviders:
+    print(i)
