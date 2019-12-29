@@ -16,5 +16,6 @@ def count_unique_codes(words):
         same_words.add(str)
     return same_words
 
+
 words = input("Введите слова: ").split()
 print(count_unique_codes(words))
