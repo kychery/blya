@@ -1,5 +1,5 @@
 def is_power_of_two(n, a=0, i=0):
-    if (n>=0) and (n<1):
+    if (n>0) and (n<1):
         a = 1
         while a >= n:
             a = 2**i
