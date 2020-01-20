@@ -1,10 +1,10 @@
-def is_prime(n, d=2):
-    if n > 1:
-        while n % d != 0:
-            d += 1
-        return True
-    else:
+def is_prime(n):
+    if n < 2:
         return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
     
 
 num = int(input())
