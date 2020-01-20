@@ -5,4 +5,5 @@ def is_beauty(n):
         A = A + int(a[i])
     return n % A == 0
 
+
 is_beauty(145)
